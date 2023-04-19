@@ -1,0 +1,611 @@
+/* 공통 */
+.wrap {
+    position: relative;
+    max-width: 420px;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    background:#fff;
+}
+.home-inner {
+    padding: 0 20px;
+}
+.content-item {
+    padding: 40px 0;
+}
+.sub-item {
+    padding: 30px 0;
+}
+.gy_bg {
+    background: #F2F2F2;
+}
+.content-title {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #303437;
+}
+.gy-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #888888;
+}
+.content-title img {
+    vertical-align: sub;
+    margin-right: 10px;
+}
+.tag.wh {
+    padding: 4px 5px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 21px;
+    color: #888888;
+}
+.tag.gy {
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #ABB1B4;
+    background: rgba(242, 244, 245, 0.5);
+    border: 1px solid #F2F4F5;
+    border-radius: 10px;
+}
+.tag.bk {
+    padding: 4px 5px;
+    font-size: 12px;
+    background: rgba(9, 10, 10, 0.2);
+    border-radius: 21px;
+    color: #E7E7E7;
+}
+.link_a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* 유저 이름 */
+.home-top {
+    padding-top: 65px;
+}
+.content-top {
+    padding-top: 270px;
+}
+.content-top.sct {
+    padding-top: 300px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    max-width: 420px;
+    width: 100%;
+    background: #fff;
+    z-index: 50;
+    box-sizing: border-box;
+}
+.user-info {
+    padding: 20px 25px;
+}
+.user-info .user-info-inner {
+    display: flex;
+    align-items: center;
+}
+.user-info .user-info-inner .user-name {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 700;
+    color:#090A0A;
+}
+.user-info .user-info-inner .user-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.user-info .user-info-inner .user-ico a {
+    padding: 0 5px;
+}
+
+/* 상단 네비게이션 */
+.top_navi {
+    position: relative;
+}
+.top_navi ul {
+    display: flex;
+    padding: 10px 0;
+}
+.top_navi ul::after {
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background: #E7E7E7;
+}
+.top_navi ul li {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+.top_navi ul li.active::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -15px;
+    z-index: 1;
+    background:#090A0A;
+}
+.tab-top.sct .top_navi ul li .tab-img {
+    display: none;
+}
+.top_navi ul li a span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #B8B8B8;
+}
+.top_navi ul li.active a span {
+    font-weight: 700;
+    color: #090A0A;
+}
+.top_navi ul li a img.on {
+    display: none;
+}
+.top_navi ul li.active a img {
+    display: none;
+}
+.top_navi ul li.active a img.on {
+    display: block;
+}
+
+/* 카테고리 탭 */
+.category {
+    padding: 30px 0 15px 20px;
+}
+.category ul {
+    display: flex;
+    overflow-x: scroll;
+}
+.category ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin-right: 7px;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 8px;
+    color: #6C7072;
+    background: #FAFAFA;
+}
+.category ul li:not(.cate-setting).active {
+    color:#fff;
+    background: #090A0A;
+}
+
+.cate-swiper-wrap {
+    padding-left: 20px;
+}
+.cate-swiper ul li {
+    position: relative;
+}
+.cate-swiper ul li .cate-txt {
+    position: absolute;
+    top: 0;
+    width: 260px;
+    height: 100%;
+}
+.cate-swiper ul li .cate-txt .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 5px;
+    font-size: 12px;
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 21px;
+    color: #E7E7E7;
+    background: #000000;
+}
+.cate-swiper ul li .cate-txt p {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.home-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 12px;
+    background:#FFF059;
+    color:#090A0A;
+}
+.home-popup .home-popup-txt {
+    width: 80%;
+}
+.home-popup .home-popup-txt b {
+    font-weight: 700;
+}
+
+.top-item {
+    padding-top: 30px;
+}
+.somenails {
+    position: relative;
+}
+.somenails.round {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.somenails .somenails-img {
+    position: relative;
+    overflow: hidden;
+}
+.somenails .somenails-img img.somenails-imgs {
+    width: 100%;
+    transition: all .3s;
+}
+.somenails:hover .somenails-img img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+.somenails .somenails-img .tag_wrap {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 100%;
+    text-align: end;
+    z-index: 1;
+}
+.tag b {
+    font-weight: 700;
+}
+.favorite {
+    display: inline-block;
+    background: url(/img/favorite.svg)no-repeat;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.favorite.active {
+    background: url(/img/favorite_on.svg)no-repeat;
+}
+.somenails .somenails-txt { 
+    display: flex;
+    padding: 15px 25px 15px;
+}
+.somenails .somenails-txt img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.somenails .somenails-txt .somenails-title {
+    width: 80%;
+}
+.somenails .somenails-txt .somenails-title h3 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #303437;
+}
+.somenails .somenails-txt .somenails-title .writer {
+    margin: 5px 0 10px 0;
+    font-size: 12px;
+    color: #303437;
+}
+.somenails .somenails-txt .level {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C7072;
+}
+.somenails .somenails-txt .level b {
+    color: #00AAFF;
+}
+.somenails .somenails-round {
+    position: relative;
+    text-align: center;
+    padding: 40px 25px 50px 25px;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+}
+.somenails .somenails:last-child {
+    margin-bottom: 0;
+}
+.somenails .somenails-round .play-btn {
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.somenails .somenails-round .qa {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #090A0A;
+}
+.somenails .somenails-round .qa_box {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.somenails .somenails-round .qa_box b {
+    display: block;
+    margin-bottom: 10px;
+    color: #090A0A;
+    font-size: 16px;
+    font-weight: 600;
+}
+.somenails .somenails-round .qa_box .ans {
+    color: #595959;
+    font-size: 16px;
+}
+.home-shorts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-shorts li {
+    position: relative;
+    width: 48%;
+    margin-bottom: 20px;
+}
+.home-shorts li:nth-child(2n) {
+    margin-left: 10px;
+}
+.home-shorts li .shorts-img {
+    position: relative;
+    overflow: hidden;
+}
+.home-shorts li:hover .shorts-img img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+.home-shorts li .shorts-img img {
+    width: 100%;
+    transition: all .3s;
+}
+.home-shorts li .shorts-img .tag_wrap {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 100%;
+    text-align: end;
+    z-index: 5;
+}
+.home-shorts li .shorts-txt {
+    display: flex;
+    padding-top: 10px;
+}
+.home-shorts li .shorts-txt img {
+    width: 32px;
+    height: 32px;
+}
+.home-shorts li .shorts-txt .shorts_title {
+    margin-left: 10px;
+    color: #303437;
+}
+.home-shorts li .shorts-txt .shorts_title h3 {
+    font-size: 13.5px;
+    font-weight: 700;
+}
+.home-shorts li .shorts-txt .shorts_title .writer {
+    display: block;
+    margin: 8px 0  10px 0;
+    font-size: 12px;
+}
+
+.mid-banner {
+    position: relative;
+}
+.mid-banner img {
+    width: 100%;
+}
+.mid-banner .btn-wrap {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+.mid-banner .btn-wrap .home-btn {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 26px;
+    background:#000;
+    color: #fff;;
+}
+
+.home-creator {
+    padding: 40px;
+    border-radius: 30px;
+    background:#fff;
+}
+.home-creator .creator-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.home-creator .creator-top h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #303437;
+    font-weight: 700;
+}
+.home-creator .creator-top .creator-box {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+.home-creator .creator-top .creator-box .comment {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #303437;
+}
+.home-creator .creator-top .creator-box .tag {
+    background: #F2F2F2;
+}
+.home-creator .somenails {
+    padding: 0 15px;
+}
+.home-creator .somenails .somenails-txt {
+    padding: 15px 0 0;
+}
+.home-creator .somenails .somenails-txt img {
+    width: 43px;
+    height: 43px;
+}
+.home-creator .somenails .somenails-txt .somenails-title {
+    width: 70%;
+}
+.after_line {
+    position: relative;
+    margin-bottom: 10px;
+}
+.after_line::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background:#F2F2F2;
+}
+.vlog-swiper-wrap {
+    padding-left: 20px;
+}
+.vlog-swiper {
+    margin-top: 10px;
+}
+.vlog-swiper .swiper-wrapper .somenails .somenails-txt {
+    padding: 15px 0px 15px;
+}
+
+.other_tag {}
+.other-tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+.other-tag li {
+    position: relative;
+    width: 48%;
+    margin-bottom: 10px;
+    transition: all .3s;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.other-tag li img {
+    width: 100%;
+}
+.other-tag li:hover {
+    transform: translate(-5px,-5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+}
+.other-tag li:nth-of-type(2n) {
+    margin-left: 10px;
+}
+.other-tag li .other-tag-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    color: #fff;
+}
+
+.creator-list {}
+.creator-list li a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #FAFAFA;
+    border-radius: 18px;
+}
+.creator-list li:last-child {
+    margin-bottom: 0;
+}
+.creator-list li .creator-profile {
+    width: 52px;
+    height: 52px;
+}
+.creator-list li .creator-profile img {
+    width: 100%;
+}
+.creator-list li .creator-info {
+    margin-left: 15px;
+}
+.creator-list li .creator-info .creator-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.creator-list li .creator-info .creator-tag .tag {
+    background: #F2F2F2;
+}
+
+.shorts-swiper-wrap {
+    padding-left: 20px;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts {
+    flex-wrap: nowrap;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts li:nth-child(2n) {
+    margin: 0;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts li .shorts-sub {
+    max-width: 140px;
+    margin-top: 10px;
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 700;
+    color: #303437;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts li .shorts-txt {
+    display: block;
+    padding-top: 5px;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts li .shorts-txt div:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.shorts-swiper-wrap .shorts-swiper .home-shorts li .shorts-txt .writer {
+    display: block;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #303437
+}
+
+.round-swiper-wrap {
+    padding-left: 20px;
+}
+.round-swiper .swiper-wrapper .swiper-slide .somenails-round {
+    padding: 30px 20px;
+}
+.round-swiper .swiper-wrapper .swiper-slide .somenails-round .qa_box {
+    padding: 15px;
+}
+.round-swiper .swiper-wrapper .swiper-slide .somenails-round .qa_box b,
+.round-swiper .swiper-wrapper .swiper-slide .somenails-round .qa_box .ans {
+    font-size: 12px;
+}

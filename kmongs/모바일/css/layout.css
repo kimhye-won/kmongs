@@ -1,0 +1,143 @@
+.font-smooth {
+    transform: rotate(0.1deg);
+}
+
+/* 말줄임표 */
+.ellipse {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ellipse2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+
+}
+.ellipse3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+}
+
+/* 하단 고정 네비게이션 */
+.mobile_navi {
+    position: fixed;
+    bottom: 0;
+    max-width: 420px;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    z-index: 50;
+}
+.mobile_navi ul {
+    display: flex;
+    padding: 15px 20px;
+}
+.mobile_navi ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_navi ul li a {
+    text-align: center;
+}
+.mobile_navi ul li a img.on {
+    display: none;
+}
+.mobile_navi ul li.active a img {
+    display: none;
+}
+.mobile_navi ul li.active a img.on {
+    display: block;
+    margin: 0 auto;
+}
+.mobile_navi ul li a span {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #bbb;
+}
+.mobile_navi ul li.active a span {
+    font-weight: 700;
+    color: #090A0A;
+}
+
+/* 필터링 */
+.filter {
+    position: fixed;
+    bottom: -100%;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0px -6px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    z-index: 60;
+    background: #F2F2F2;
+    transition: all .6s;
+}
+.filter.active {
+    bottom: 0;
+}
+.filter .filter-inner {
+    position: relative;
+    padding: 50px 20px 30px;
+}
+.filter .filter-inner::after {
+    content:'';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 40px;
+    height: 3px;
+    border-radius: 3px;
+    transform: translate(-50%,0%);
+    background:#E7E7E7;
+}
+.filter .filter-inner .filter-section:first-child {
+    margin-bottom: 30px;
+}
+.filter .filter-inner .filter-section h2 {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.filter .filter-inner .filter-section .filter-tag {
+
+}
+.filter .filter-inner .filter-section .filter-tag .tag.wh {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #FAFAFA;
+    transition: all .2s;
+    cursor: pointer;
+}
+.filter .filter-inner .filter-section .filter-tag .tag.wh.active {
+    background:#090A0A;
+    color: #fff;
+}
+.filter .filter-inner .filter-btn {
+    padding: 0 20px;
+    margin-top: 80px;
+}
+.filter .filter-inner .filter-btn a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background: #000;
+    border-radius: 50px;
+    color: #fff;
+}
