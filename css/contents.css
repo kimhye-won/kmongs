@@ -185,6 +185,7 @@
     border-radius: 8px;
     color: #6C7072;
     background: #FAFAFA;
+    transition: all .2s;
 }
 .category ul li:not(.cate-setting).active {
     color:#fff;
