@@ -26,18 +26,17 @@
 }
 
 /* 스크롤바 커스텀 */
-::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
+.scroll_container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #fff; /* 스크롤바의 색상 */
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;  /*스크롤바 뒷 배경 색상*/
+.scroll_container::-webkit-scrollbar{
+display: none;
+width: 0;  /* Remove scrollbar space */
+height: 0;
+background: transparent;  /* Optional: just make scrollbar invisible */
+-webkit-appearance: none;
 }
 
 /* 하단 고정 네비게이션 */
