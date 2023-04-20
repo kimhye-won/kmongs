@@ -279,7 +279,7 @@
 }
 .favorite {
     display: inline-block;
-    background: url(https://kimhye-won.github.io/kmongs/img/favorite.svg)no-repeat;
+    background: url(/img/favorite.svg)no-repeat;
     width: 15px;
     height: 15px;
     vertical-align: middle;
@@ -287,7 +287,7 @@
     cursor: pointer;
 }
 .favorite.active {
-    background: url(https://kimhye-won.github.io/kmongs/img/favorite_on.svg)no-repeat;
+    background: url(/img/favorite_on.svg)no-repeat;
 }
 .somenails .somenails-txt { 
     display: flex;
