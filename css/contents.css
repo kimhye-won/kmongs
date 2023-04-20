@@ -257,6 +257,7 @@
 .somenails .somenails-img {
     position: relative;
     overflow: hidden;
+    border-radius: 20px 20px 0 0;
 }
 .somenails .somenails-img img.somenails-imgs {
     border-radius: 20px 20px 0 0;
