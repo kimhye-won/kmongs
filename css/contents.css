@@ -249,7 +249,6 @@
 }
 .somenails {
     position: relative;
-    transition: all .3s;
 }
 .somenails.round {
     border-radius: 20px 20px 0 0;
@@ -261,6 +260,7 @@
 }
 .somenails .somenails-img img.somenails-imgs {
     width: 100%;
+    transition: all .3s;
 }
 .somenails.round .somenails-img img.somenails-imgs {
     border-radius: 20px 20px 0 0;
