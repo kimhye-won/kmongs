@@ -298,6 +298,10 @@
     text-align: end;
     z-index: 1;
 }
+.somenails .somenails-img .tag_bot .tag {
+    background:rgba(255, 255, 255, 0.8) !important;
+    color: #888;
+}
 .tag b {
     font-weight: 700;
 }
