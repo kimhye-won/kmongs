@@ -36,8 +36,14 @@
     color: #888888;
 }
 .content-title img {
-    vertical-align: sub;
+    vertical-align: middle;
     margin-right: 10px;
+}
+.tag {
+    padding: 4px 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    color: #000;
 }
 .tag.wh {
     padding: 4px 5px;
@@ -91,10 +97,16 @@
 }
 .user-info {
     padding: 20px 25px;
+    min-height: 65px;
+    box-sizing: border-box;
 }
 .user-info .user-info-inner {
     display: flex;
     align-items: center;
+}
+.user-info .user-info-inner .prev-btn {
+    display: inline-block;
+    margin-right: 20px;
 }
 .user-info .user-info-inner .user-name {
     width: 80%;

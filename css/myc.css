@@ -1,0 +1,297 @@
+/* my코스 태그 모음 */
+.myc-tags {
+    padding-left: 22px;
+}
+.myc-tag-day {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_day.svg)no-repeat 10% 50% !important;
+}
+.myc-tag-fav {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_favorite.svg)no-repeat 10% 70% !important;
+}
+.myc-tag-work {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_work.svg)no-repeat 10% 60% !important;
+}
+.myc-tag-sell {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_sell.svg)no-repeat 10% 80% !important;
+}
+.myc-tag-note {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_note.svg)no-repeat 10% 50% !important;
+}
+.myc-tag-cel {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_celebration.svg)no-repeat 10% 50% !important;
+}
+.myc-tag-talk {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_talk.svg)no-repeat 10% 50% !important;
+}
+.myc-tag-school {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_school.svg)no-repeat 5% 50% !important;
+}
+.myc-tag-ticket {
+    background:url(https://kimhye-won.github.io/kmongs/img/tag_ticket.svg)no-repeat 10% 50% !important;
+}
+
+.myc-wrap {
+    background:#f2f2f2;
+}
+.myc-top {
+    padding:0 20px 15px;
+    background: #fff;
+}
+.myc-info {
+    position: relative;
+    height: 240px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.myc-info .myc-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.myc-info .myc-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.myc-info .myc-bg::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.myc-info .myc-info-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+.myc-info .myc-info-inner .myc-tag {
+    margin-bottom: 20px;
+}
+.myc-info .myc-info-inner .myc-tag .tag {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.myc-info .myc-info-inner .myc-tag .tag.more {
+    display: inline-block;
+    padding:5px 15px 5px 5px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    background: url(https://kimhye-won.github.io/kmongs/img/more_next.svg)no-repeat 90% 50%;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    transition: all .3s;
+}
+.myc-info .myc-info-inner .myc-tag .tag.more:hover {
+    transform: translate(-3px,-3px);
+}
+.myc-info .myc-info-inner h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.myc-info .myc-info-inner .myc-txt {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-size: 12px;
+    color: #B8B8B8;
+}
+.myc-info .myc-info-inner .myc-progress-wrap {
+    max-width: 260px;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(9, 10, 10, 0.6);
+    border-radius: 10px;
+}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner .myc-progress-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner .myc-progress-day .myc-daynum {}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner .myc-progress-day .myc-daynum b {
+    font-size: 12px;
+    font-weight: 700;
+    color: #B8B8B8;
+}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner .myc-progress-day .myc-daynum span {
+    font-size: 10px;
+    color: #595959;
+}
+.myc-info .myc-info-inner .myc-progress-wrap .prg-inner .myc-progress-day .myc-suc {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0;
+    color: #fff059;
+    transition: all .2s;
+}
+#my-progress {
+    width: 100%;
+    height: 3px;
+    vertical-align: middle;
+    appearance: none;
+}
+#my-progress::-webkit-progress-bar {
+    border-radius: 3px;
+    background:#595959;
+}
+#my-progress::-webkit-progress-value {
+    border-radius: 3px;
+    background:#FFF059;
+}
+.myc-day-title {
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #090A0A;
+}
+.myc-day {}
+.myc-day ul {
+    display: flex;
+}
+.myc-day ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #F2F2F2;
+}
+.myc-day ul li.active {
+    background:#fff059;
+}
+.day-list {
+    padding: 15px 0;
+}
+.day-list ul {
+    margin: 0 15px;
+}
+.day-list ul li {
+    position: relative;
+    display: flex;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+    background:#fff;
+}
+.day-list ul li::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #E7E7E7 !important;
+    transform: translate(0,-50%);
+    z-index: 2;
+}
+.day-list ul li::after {
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 120%;
+    background-color: #E7E7E7;
+    z-index: 1;
+}
+.day-list ul li.clear::before {
+    background-color: #FFF059 !important;
+    background:url(https://kimhye-won.github.io/kmongs/img/dayc-chk.svg)no-repeat 50% 50%;
+    z-index: 3;
+}
+.day-list ul li.clear::after {
+    background-color: #FFF059;
+}
+.day-list ul li.ing::before {
+    background-color: #FFF059 !important;
+}
+.day-list ul li:last-child::after {
+    display: none;
+}
+.day-list ul li.disa div {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+.day-list ul li .dayc-profile {
+    width: 70px;
+    height: 70px;
+}
+.day-list ul li .dayc-profile img {
+    width: 100%;
+}
+.day-list ul li .dayc-info {
+    width: calc(100% - 85px);
+    margin-left: 15px;
+}
+.day-list ul li .dayc-info .dayc-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.day-list ul li .dayc-info .dayc-title .tit {
+    font-size: 15px;
+    font-weight: 700;
+    color: #303437;
+}
+.day-list ul li .dayc-info .dayc-title .sub-tit {
+    font-size: 10px;
+    font-weight: 500;
+    color: #B8B8B8;
+}
+.day-list ul li .dayc-info .dayc-writer {
+    font-size: 12px;
+    font-weight: 500;
+    color: #B8B8B8;
+}
+.day-list ul li .dayc-info .dayc-tag {
+    margin-top: 15px;
+}
+.day-list ul li .dayc-info .dayc-tag.dayc-vlog {
+    display: flex;
+    justify-content: space-between;
+}
+.day-list ul li .dayc-info .dayc-tag.dayc-vlog .part .tag {
+    font-size: 10px;
+    background: #888888;
+    color: #B8B8B8
+}
+.day-list ul li .dayc-info .dayc-tag.dayc-vlog .part .tag b {
+    font-weight: 700;
+    color: #fff;
+}
+.myc-more {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.myc-list {
+    padding: 20px;
+}
+.myc-list .category {
+    padding: 0px 0 20px 0;
+}
+.category ul li.cate-setting {
+
+}
+.myc-list .myc-info {
+    margin-bottom: 15px;
+}

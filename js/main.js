@@ -67,9 +67,31 @@ $(function() {
         spaceBetween: 20,
     });
 
+    var swiper5 = new Swiper(".tab-swiper", {
+        slidesPerView: 6.5,
+        spaceBetween: 10,
+    });
+    
+
     $('.favorite').click(function(){
         $(this).toggleClass('active');
     })
 
+    /* my코스 */
+    if( $('#my-progress').val() == 100 ){
+        $('.myc-suc').css('opacity','1');
+    } else {
+        $('.myc-suc').css('opacity','0');
+    }
+
+    var swiper6 = new Swiper(".myc-swiper", {
+        slidesPerView: 7,
+        spaceBetween: 10,
+        //initialSlide: 12,
+    });
+    
+    var slideIdx = $('.myc-day ul li.active').html();
+
+    swiper6.slideTo(slideIdx - 1, 500, false);
 
 });
