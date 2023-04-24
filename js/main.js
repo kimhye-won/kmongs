@@ -88,7 +88,7 @@ $(function() {
         slidesPerView: 7,
         spaceBetween: 10,
         //initialSlide: 12,
-        speed : 1000,
+        speed : 500,
     });
     
     var slideIdx = $('.myc-day ul li.active').html();
